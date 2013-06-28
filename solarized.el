@@ -958,7 +958,8 @@
     (custom-theme-set-variables
      theme-name
      `(ansi-color-names-vector [,base01 ,red ,green ,yellow ,blue ,magenta ,cyan ,solarized-fg])
-     `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,solarized-fg])
+     ;; `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,solarized-fg])
+     `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,base2])
      ;; fill-column-indicator
      `(fci-rule-color ,solarized-hl)
 
