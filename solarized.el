@@ -952,14 +952,28 @@
        ((,class (:foreground ,solarized-comments :background ,solarized-comments))))
 
      ;; zencoding
-     `(zencoding-preview-input ((,class (:background ,solarized-hl :box ,solarized-emph)))))
+     `(zencoding-preview-input ((,class (:background ,solarized-hl :box ,solarized-emph))))
+
+     ;; term
+     `(term-color-black ((,class (:foreground ,base01 :background ,solarized-bg))))
+     `(term-color-red ((,class (:foreground ,red :background ,solarized-bg))))
+     `(term-color-green ((,class (:foreground ,green :background ,solarized-bg))))
+     `(term-color-yellow ((,class (:foreground ,yellow :background ,solarized-bg))))
+     `(term-color-blue ((,class (:foreground ,blue :background ,solarized-bg))))
+     `(term-color-magenta ((,class (:foreground ,magenta :background ,solarized-bg))))
+     `(term-color-cyan ((,class (:foreground ,cyan :background ,solarized-bg))))
+     `(term-color-white ((,class (:foreground ,base2 :background ,solarized-bg))))
+     '(term-default-fg-color ((t (:inherit term-color-white))))
+     '(term-default-bg-color ((t (:inherit term-color-black))))
+     )
 
 
     (custom-theme-set-variables
      theme-name
      `(ansi-color-names-vector [,base01 ,red ,green ,yellow ,blue ,magenta ,cyan ,solarized-fg])
      ;; `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,solarized-fg])
-     `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,base2])
+     ;; `(ansi-term-color-vector [,solarized-bg ,solarized-bg ,red ,green ,yellow ,blue ,magenta ,cyan ,base2])
+     `(ansi-term-color-vector [term term-color-black term-color-red term-color-green term-color-yellow term-color-blue term-color-magenta term-color-cyan term-color-white])
      ;; fill-column-indicator
      `(fci-rule-color ,solarized-hl)
 
